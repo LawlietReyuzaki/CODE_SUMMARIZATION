@@ -1,0 +1,70 @@
+// app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+}
+
+// app.component.html
+<nav>
+  <!-- Navigation links to different pages -->
+  <a routerLink="/home">Home</a>
+  <a routerLink="/contact">Contact</a>
+  <a routerLink="/marketing">Marketing</a>
+</nav>
+<router-outlet></router-outlet>
+
+// home-page.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home-page',
+  templateUrl: './home-page.component.html',
+  styleUrls: ['./home-page.component.css']
+})
+export class HomePageComponent {
+}
+
+// home-page.component.html
+<div>
+  <!-- Elements described in the HomePage section of JSON output -->
+</div>
+
+// contact-page.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-contact-page',
+  templateUrl: './contact-page.component.html',
+  styleUrls: ['./contact-page.component.css']
+})
+export class ContactPageComponent {
+}
+
+// contact-page.component.html
+<div>
+  <!-- Elements described in the ContactPage section of JSON output -->
+</div>
+
+// marketing-page.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-marketing-page',
+  templateUrl: './marketing-page.component.html',
+  styleUrls: ['./marketing-page.component.css']
+})
+export class MarketingPageComponent {
+}
+
+// marketing-page.component.html
+<div>
+  <!-- Elements described in the MarketingPage section of JSON output -->
+</div>
+
+
+
