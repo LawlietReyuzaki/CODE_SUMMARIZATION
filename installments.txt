@@ -1,0 +1,3 @@
+sudo snap install ollama --beta
+ollama run codellama
+pip install streamlit
