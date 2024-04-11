@@ -1,0 +1,18 @@
+FROM ./codellama-13b.Q5_K_M.gguf
+PARAMETER num_ctx 3900
+PARAMETER temperature 0.7
+PARAMETER top_k 50
+PARAMETER top_p 0.95
+PARAMETER stop "<|system|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
+PARAMETER stop "</s>"
+TEMPLATE """
+<|system|>\n system
+{{ .System }}</s>
+<|user|>\n user
+{{ .Prompt }}</s>
+<|assistant|>\n 
+"""
+SYSTEM """You are a coding assistant that will help in code summarization and generation tasks"""
+
